@@ -33,7 +33,7 @@ window.addEventListener('load', async () => {
   BTN_CANCEL_POST.addEventListener('click', closePostModal)
 
   if ('serviceWorker' in navigator) {
-      const reponse = await navigator.serviceWorker.register('sw.js');
+      const response = await navigator.serviceWorker.register('sw.js');
       if (response) {
           console.info('Service worker registrado');
       }
