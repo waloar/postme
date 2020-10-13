@@ -18,7 +18,7 @@ const closePostModal = () => {
   MODAL_POST.style.transform = 'translateY(100vh)';
 };
 
-window.addEventListener('beofreinstallprompt',(e)=>{
+window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt=e;
 });
